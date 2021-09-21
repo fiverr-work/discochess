@@ -1,0 +1,35 @@
+#download {
+  background-color: $color-secondary;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-image: url("../img/backgrounds/bg-footer.svg");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  h3 {
+    color: $color-white;
+  }
+  p {
+    color: $color-text-light;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .container {
+    .left {
+      max-width: 723px;
+      display: flex;
+      align-items: center;
+      img {
+        margin-right: 20px;
+      }
+    }
+  }
+  @include mq(md) {
+    background: $color-secondary;
+    .container .left {
+      align-items: flex-start;
+      img {
+        max-width: 100px;
+      }
+    }
+  }
+}

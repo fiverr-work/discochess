@@ -1,0 +1,49 @@
+#reviews {
+  padding-bottom: 120px;
+  header {
+    margin-bottom: 100px;
+    text-align: center;
+    p {
+      max-width: 633px;
+      margin: 20px auto 0;
+    }
+  }
+  .reviews {
+    display: flex;
+
+    &__item {
+      flex: 1;
+      height: auto;
+      article {
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+        background: $color-white;
+        min-height: 207px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        p {
+          margin-top: 15px;
+          margin-bottom: auto;
+        }
+      }
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+  }
+
+  @include mq(lg) {
+    .reviews {
+      flex-direction: column;
+
+      &__item {
+        &:not(:last-child) {
+          margin-bottom: 30px;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

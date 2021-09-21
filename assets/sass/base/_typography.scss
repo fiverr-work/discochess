@@ -46,7 +46,7 @@ a {
 p {
   font-size: $font-size-sm;
   font-family: $font-book;
-  &.larg {
+  &.large {
     font-size: $font-size-re;
   }
 }
@@ -54,7 +54,7 @@ p {
 // How typogrraphy should looks like on mobile version
 @include mq(xs) {
   h1 {
-    font-size: calc($font-size-xl - 15px);
+    font-size: $font-size-lg;
   }
   h2 {
     font-size: $font-size-lg;
@@ -72,7 +72,7 @@ p {
     font-size: $font-size-sm;
   }
   p {
-    &.larg {
+    &.large {
       font-size: $font-size-sm;
     }
   }

@@ -1,17 +1,22 @@
-// 2 - Utils
+// 1 - Utils
 @import "utils/variables";
 @import "utils/mixins";
 @import "utils/helpers";
 
-// 3 - Base;
+// 2 - Base
 @import "base/reset";
 @import "base/typography";
 
-// 4 - Components;
+// 3 - Components
 @import "components/buttons";
-@import "components/inputs";
 
-// 5 - Layout;
+// 4 - Layout
 @import "layout/header";
 @import "layout/navbar";
 @import "layout/footer";
+
+// 5 - sections
+@import "layout/sections/details";
+@import "layout/sections/features";
+@import "layout/sections/reviews";
+@import "layout/sections/download";

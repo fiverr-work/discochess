@@ -6,7 +6,7 @@ button,
   border-radius: 10px;
   cursor: pointer;
   transition: background-color 300ms;
-
+  @include ripple-effect;
   &:hover {
     background-color: $color-secondary;
   }
