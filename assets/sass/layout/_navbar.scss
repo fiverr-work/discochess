@@ -1,0 +1,95 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: none;
+  margin-top: 18px;
+
+  & > label {
+    cursor: pointer;
+    &:nth-of-type(1) {
+      display: none;
+    }
+    &:nth-of-type(2) {
+      z-index: 5;
+      position: fixed;
+      top: 20px;
+      right: 30px;
+      display: none;
+      svg {
+        rect {
+          fill: white;
+        }
+      }
+    }
+  }
+  input {
+    display: none;
+    &:checked ~ label {
+      &:nth-of-type(2) {
+        display: block;
+      }
+    }
+    &:checked ~ div {
+      right: 0;
+      transition: left 300ms, right 300ms;
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    font-family: $font-bold;
+    color: $color-black;
+    font-size: $font-size-lg;
+    line-height: 1;
+    img {
+      margin-right: 10px;
+      width: 37.7px;
+      height: 36px;
+    }
+  }
+  & > div {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    a {
+      color: $color-black;
+      transition: color 200ms;
+      margin-right: 3vw;
+
+      &:hover {
+        transition: color 200ms;
+        color: $color-primary;
+      }
+    }
+  }
+
+  @include mq(sm) {
+    & > label {
+      &:nth-of-type(1) {
+        display: block;
+      }
+    }
+    & > div {
+      z-index: 4;
+      position: fixed;
+      width: 100%;
+      right: -100%;
+      top: 0;
+      bottom: 0;
+      background-color: $color-secondary-dark;
+      flex-direction: column;
+      justify-content: center;
+      transition: left 300ms, right 300ms;
+
+      a {
+        margin-right: 0;
+        margin-bottom: 5vh;
+        color: $color-white;
+      }
+    }
+  }
+}

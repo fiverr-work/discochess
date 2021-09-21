@@ -1,0 +1,79 @@
+/*=== Import Fonts ===*/
+@include font-face($font-medium, $font-medium-path);
+@include font-face($font-bold, $font-bold-path);
+@include font-face($font-book, $font-book-path);
+
+/*=== Typography Styling ===*/
+body {
+  color: $color-text-dark;
+  font-size: $font-size-sm;
+  font-family: $font-book;
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+}
+
+h1 {
+  @include font-source-sans($font-bold, $font-size-xl, $color-black, bold, 1.33);
+}
+h2 {
+  @include font-source-sans($font-bold, 36px, $color-black, bold, 1.33);
+}
+h3 {
+  @include font-source-sans($font-bold, $font-size-lg, $color-black, bold, 1.33);
+}
+h4 {
+  @include font-source-sans($font-bold, $font-size-md, $color-black, bold, 1.33);
+}
+h5 {
+  @include font-source-sans($font-bold, $font-size-re, $color-black, bold, 1.33);
+}
+h6 {
+  @include font-source-sans($font-bold, $font-size-re, $color-black, bold, 1.33);
+}
+
+button {
+  font-size: $font-size-sm;
+  font-family: $font-medium;
+}
+
+a {
+  font-size: $font-size-sm;
+  font-family: $font-book;
+}
+
+p {
+  font-size: $font-size-sm;
+  font-family: $font-book;
+  &.larg {
+    font-size: $font-size-re;
+  }
+}
+
+// How typogrraphy should looks like on mobile version
+@include mq(xs) {
+  h1 {
+    font-size: calc($font-size-xl - 15px);
+  }
+  h2 {
+    font-size: $font-size-lg;
+  }
+  h3 {
+    font-size: $font-size-md;
+  }
+  h4 {
+    font-size: $font-size-re;
+  }
+  h5 {
+    font-size: $font-size-sm;
+  }
+  h6 {
+    font-size: $font-size-sm;
+  }
+  p {
+    &.larg {
+      font-size: $font-size-sm;
+    }
+  }
+}

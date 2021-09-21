@@ -1,0 +1,45 @@
+// Colors
+$color-secondary-dark: #122317;
+$color-secondary: #1c3222;
+$color-white: #fff;
+$color-black: #000;
+$color-primary: #159f54;
+$color-text-dark: #4f4f4f;
+$color-text-light: #bdbdbd;
+
+//Font sizes
+$font-size-sm: 14px;
+$font-size-re: 16px;
+$font-size-md: 20px;
+$font-size-lg: 24px;
+$font-size-xl: 48px;
+
+// Font Names
+$font: "GothamRounded";
+
+//==================================//
+// Don't miss with those variabeles //
+//==================================//
+
+// Breakpoint
+$breakpoints: (
+  "xs": 360px,
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px,
+);
+
+// Black & White
+$color-black: #000000;
+$color-white: #ffffff;
+
+//Font Path
+$font-medium-path: "../fonts/" + $font + "/" + $font + "-Medium.otf";
+$font-bold-path: "../fonts/" + $font + "/" + $font + "-Bold.otf";
+$font-book-path: "../fonts/" + $font + "/" + $font + "-Book.otf";
+
+//Font Family
+$font-medium: $font + " Medium";
+$font-bold: $font + " Bold";
+$font-book: $font + " Book";
