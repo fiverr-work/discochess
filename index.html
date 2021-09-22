@@ -13,6 +13,9 @@
     <meta name="author" content="" />
     <meta name="description" content="" />
 
+    <!-- WoW JS -->
+    <script src="./assets/js/wow.js"></script>
+
     <!-- Stylesheet
 	================================================== -->
     <link rel="stylesheet" href="./assets/css/style.css" />
@@ -23,55 +26,31 @@
   </head>
 
   <body>
-    <nav class="navbar" id="navbar">
+    <nav class="navbar wow animate__animated animate__slideInDown" id="navbar">
       <div class="container">
         <a class="logo" href="/">
           <img src="./assets/img/logo/logo.svg" alt="Disco Chess" />
           DiscoChess
         </a>
-        <input type="checkbox" id="menu" />
-        <label for="menu">
-          <svg
-            width="36"
-            height="28"
-            viewBox="0 0 36 28"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect x="0.460571" y="0.784317" width="35" height="5" rx="2.5" fill="#159F54" />
-            <rect x="0.460571" y="11.4775" width="35" height="5" rx="2.5" fill="#159F54" />
-            <rect x="0.460571" y="22.1707" width="35" height="5" rx="2.5" fill="#159F54" />
+        <div
+          id="menu-icon-wrapper"
+          class="menu-icon-wrapper"
+          style="visibility: visible; display: none"
+        >
+          <svg width="1000px" height="1000px">
+            <path
+              class="path1"
+              d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"
+            ></path>
+            <path class="path2" d="M 300 500 L 700 500"></path>
+            <path
+              class="path3"
+              d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"
+            ></path>
           </svg>
-        </label>
-        <label for="menu">
-          <svg
-            width="29"
-            height="29"
-            viewBox="0 0 29 29"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              x="3.59192"
-              y="0.0847473"
-              width="35"
-              height="5"
-              rx="2.5"
-              transform="rotate(45 3.59192 0.0847473)"
-              fill="#159F54"
-            />
-            <rect
-              x="0.0563965"
-              y="24.8335"
-              width="35"
-              height="5"
-              rx="2.5"
-              transform="rotate(-45 0.0563965 24.8335)"
-              fill="#159F54"
-            />
-          </svg>
-        </label>
-        <div>
+          <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+        </div>
+        <div class="nav-links">
           <a href="#features">Features</a>
           <a href="#reviews">Reviews</a>
           <a href="#hero" class="btn">Download</a>
@@ -79,7 +58,7 @@
       </div>
     </nav>
     <header class="hero container" id="hero">
-      <div>
+      <div class="wow animate__animated animate__fadeInLeft">
         <h1>Improve your chess by practicing books</h1>
         <p class="large">
           Discochess is donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere
@@ -92,12 +71,12 @@
           <img src="./assets/img/icons/googlePlay.svg" alt="" />
         </a>
       </div>
-      <div>
+      <div class="wow animate__animated animate__fadeInRight">
         <img src="./assets/img/backgrounds/hero.svg" alt="" />
       </div>
       <img src="./assets/img/backgrounds/bg.svg" alt="" />
     </header>
-    <section class="details">
+    <section class="details wow animate__animated animate__fadeIn">
       <div class="container">
         <div class="feature">
           <h4>
@@ -212,14 +191,14 @@
       </div>
     </section>
     <section id="features" class="container">
-      <header>
+      <header class="wow animate__animated animate__fadeIn">
         <h1>Etiam porta sem malesuada magna mollis euismod.</h1>
         <p class="large">
           Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo,
           tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
         </p>
       </header>
-      <div class="feature">
+      <div class="feature wow animate__animated animate__fadeIn">
         <div>
           <h2>Sed posuere consectetur est at lobortis.</h2>
           <p class="large">
@@ -228,10 +207,10 @@
           </p>
         </div>
         <div>
-          <img src="./assets/img/backgrounds/screen1.svg" alt="" />
+          <img src="./assets/img/backgrounds/screen1.png" alt="" />
         </div>
       </div>
-      <div class="feature">
+      <div class="feature wow animate__animated animate__fadeIn">
         <div>
           <h2>Sed posuere consectetur est at lobortis.</h2>
           <p class="large">
@@ -241,7 +220,7 @@
         </div>
         <div><img src="./assets/img/backgrounds/screen2.svg" alt="" /></div>
       </div>
-      <div class="feature">
+      <div class="feature wow animate__animated animate__fadeIn">
         <div>
           <h2>Sed posuere consectetur est at lobortis.</h2>
           <p class="large">
@@ -253,14 +232,14 @@
       </div>
     </section>
     <section id="reviews" class="container">
-      <header>
+      <header class="wow animate__animated animate__fadeIn">
         <h1>Curabitur blandit tempus porttitor.</h1>
         <p class="large">
           Donec id elit non mi porta gravida at eget metus. Praesent commodo cursus magna, vel
           scelerisque nisl consectetur et.
         </p>
       </header>
-      <div class="reviews">
+      <div class="reviews wow animate__animated animate__fadeIn">
         <div class="reviews__item">
           <article>
             <div class="stars">
@@ -581,7 +560,7 @@
         </div>
       </div>
     </section>
-    <section id="download">
+    <section id="download" class="wow animate__animated animate__fadeIn">
       <div class="container">
         <div class="left">
           <img src="./assets/img/logo/largeLogo.svg" alt="" />
@@ -604,7 +583,7 @@
       </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer wow animate__animated animate__fadeInUp">
       <div class="container">
         <h3>DiscoChess</h3>
         <div>
@@ -617,19 +596,6 @@
       </div>
     </footer>
 
-    <script>
-      var scrollPosition = window.scrollY;
-      var logoContainer = document.getElementById("navbar");
-
-      window.addEventListener("scroll", function () {
-        scrollPosition = window.scrollY;
-
-        if (scrollPosition >= 10) {
-          logoContainer.classList.add("scroll");
-        } else {
-          logoContainer.classList.remove("scroll");
-        }
-      });
-    </script>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>

@@ -1,3 +1,4 @@
+@import "../components/menu-icon";
 .navbar {
   position: fixed;
   left: 0;
@@ -17,36 +18,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    & > label {
-      cursor: pointer;
-      &:nth-of-type(1) {
-        display: none;
-      }
-      &:nth-of-type(2) {
-        z-index: 5;
-        position: fixed;
-        top: 20px;
-        right: 30px;
-        display: none;
-        svg {
-          rect {
-            fill: white;
-          }
-        }
-      }
-    }
-    input {
-      display: none;
-      &:checked ~ label {
-        &:nth-of-type(2) {
-          display: block;
-        }
-      }
-      &:checked ~ div {
-        right: 0;
-        transition: left 300ms, right 300ms;
-      }
-    }
+
     a {
       text-decoration: none;
     }
@@ -63,10 +35,14 @@
         height: 36px;
       }
     }
-    & > div {
+    .nav-links {
       display: flex;
       align-items: center;
       flex-wrap: wrap;
+      &.is-open {
+        right: 0;
+        transition: left 300ms, right 300ms;
+      }
       a:not(.btn) {
         color: $color-black;
         transition: color 200ms;
@@ -82,12 +58,10 @@
 
   @include mq(sm) {
     .container {
-      & > label {
-        &:nth-of-type(1) {
-          display: block;
-        }
+      .menu-icon-wrapper {
+        display: block !important;
       }
-      & > div {
+      .nav-links {
         z-index: 4;
         position: fixed;
         width: 100%;
