@@ -16,21 +16,27 @@ body {
 
 h1 {
   @include font-source-sans($font-bold, $font-size-xl, $color-black, bold, 1.33);
+  margin-bottom: 20px;
 }
 h2 {
   @include font-source-sans($font-bold, 36px, $color-black, bold, 1.33);
+  margin-bottom: 20px;
 }
 h3 {
   @include font-source-sans($font-bold, $font-size-lg, $color-black, bold, 1.33);
+  margin-bottom: 10px;
 }
 h4 {
   @include font-source-sans($font-bold, $font-size-md, $color-black, bold, 1.33);
+  margin-bottom: 10px;
 }
 h5 {
   @include font-source-sans($font-bold, $font-size-re, $color-black, bold, 1.33);
+  margin-bottom: 10px;
 }
 h6 {
   @include font-source-sans($font-bold, $font-size-re, $color-black, bold, 1.33);
+  margin-bottom: 10px;
 }
 
 button {
@@ -44,10 +50,12 @@ a {
 }
 
 p {
-  font-size: $font-size-sm;
   font-family: $font-book;
-  &.large {
-    font-size: $font-size-re;
+  font-size: $font-size-re;
+  margin-bottom: 15px;
+  line-height: 1.5;
+  &.small {
+    font-size: $font-size-sm;
   }
 }
 

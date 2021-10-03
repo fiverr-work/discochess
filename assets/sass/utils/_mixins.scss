@@ -87,6 +87,7 @@
   @font-face {
     font-family: $family;
     src: url($ttf-path) format("truetype");
+    font-display: block;
   }
 }
 

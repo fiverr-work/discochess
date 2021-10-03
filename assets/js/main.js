@@ -23,3 +23,8 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelector(".nav-links").classList.toggle("is-open");
   });
 });
+
+window.onload = function () {
+  //hide the preloader
+  document.querySelector(".preloader").style.display = "none";
+};
