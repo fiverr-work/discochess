@@ -93,11 +93,13 @@ button:focus {
 
 ol,
 ul {
-  list-style: none;
+  padding-left: 15px;
+  margin-bottom: 10px;
 }
 
 li {
-  list-style: none;
+  padding: revert;
+  line-height: 1.6;
 }
 
 /**
@@ -196,3 +198,4 @@ textarea {
   overflow: auto; /* 1 */
   vertical-align: top; /* 2 */
 }
+
