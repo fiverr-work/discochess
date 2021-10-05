@@ -57,7 +57,6 @@ a,
 a:visited {
   cursor: pointer;
   transition: color 300ms ease-in-out;
-  text-decoration: none;
 
   &:focus {
     outline: thin dotted;
@@ -65,7 +64,6 @@ a:visited {
   &:active,
   &:hover {
     outline: 0;
-    text-decoration: none;
     transition: color 300ms ease-in-out;
   }
 }
@@ -100,6 +98,7 @@ ul {
 li {
   padding: revert;
   line-height: 1.6;
+  font-size: $font-size-re;
 }
 
 /**

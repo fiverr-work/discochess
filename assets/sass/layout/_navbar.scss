@@ -58,6 +58,11 @@
   }
 
   @include mq(sm) {
+    background-color: $color-white;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    top: 0;
+    padding: 15px 0;
+    transition: background-color 300ms, top 200ms, box-shadow 200ms;
     .container {
       .menu-icon-wrapper {
         display: block !important;

@@ -6,7 +6,7 @@
 /*=== Typography Styling ===*/
 body {
   color: $color-text-dark;
-  font-size: $font-size-sm;
+  font-size: $font-size-re;
   font-family: $font-book;
   font-style: normal;
   font-weight: normal;
@@ -23,11 +23,11 @@ h2 {
   margin-bottom: 20px;
 }
 h3 {
-  @include font-source-sans($font-bold, $font-size-lg, $color-black, bold, 1.33);
+  @include font-source-sans($font-bold, 18px, $color-black, bold, 1.33);
   margin-bottom: 10px;
 }
 h4 {
-  @include font-source-sans($font-bold, $font-size-md, $color-black, bold, 1.33);
+  @include font-source-sans($font-bold, $font-size-re, $color-black, bold, 1.33);
   margin-bottom: 10px;
 }
 h5 {
@@ -47,6 +47,7 @@ button {
 a {
   font-size: $font-size-sm;
   font-family: $font-book;
+  color: $color-primary;
 }
 
 p {
@@ -78,10 +79,5 @@ p {
   }
   h6 {
     font-size: $font-size-sm;
-  }
-  p {
-    &.large {
-      font-size: $font-size-sm;
-    }
   }
 }
