@@ -1,11 +1,13 @@
-<svg width="493" height="550" viewBox="0 0 493 550" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="494" height="548" viewBox="0 0 494 548" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g filter="url(#filter0_d)">
-<rect x="257.82" y="63.4121" width="201.66" height="427.338" rx="24" transform="rotate(8 257.82 63.4121)" fill="url(#pattern0)" stroke="#333333" stroke-width="8"/>
-<rect x="35.4822" y="63.5479" width="201.66" height="427.338" rx="24" transform="rotate(-8 35.4822 63.5479)" fill="url(#pattern1)" stroke="#333333" stroke-width="8"/>
+<rect width="209.661" height="435.295" rx="28" transform="matrix(-0.990272 -0.139145 -0.139145 0.990272 463.211 86.2026)" fill="#333333" />
+<rect x="262.02" y="66.0294" width="193.66" height="419.338" rx="20" transform="rotate(8 262.02 66.0294)" fill="url(#pattern0)" style="stroke: #333333;stroke-width: 1px;"/>
+<rect x="30" y="59.1733" width="209.661" height="435.295" rx="28" transform="rotate(-7.9984 30 59.1733)" fill="#333333"/>
+<rect x="39.0204" y="65.9815" width="193.66" height="419.338" rx="20" transform="rotate(-8 39.0204 65.9815)" fill="url(#pattern1)" style="stroke: #333333;stroke-width: 1px;"/>
 </g>
-<rect x="209" y="310" width="209" height="210" fill="url(#pattern2)"/>
+<rect x="208.02" y="309.029" width="209" height="210" fill="url(#pattern2)"/>
 <defs>
-<filter id="filter0_d" x="0.964478" y="0.96447" width="491.071" height="548.21" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_d" x="0" y="3.8147e-06" width="493.211" height="547.263" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset/>
